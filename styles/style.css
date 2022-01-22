@@ -66,6 +66,10 @@ body {
   background-color: #7a7593;
 }
 
+.list_text {
+  display: block;
+}
+
 .list_description {
   font-size: 11px;
   padding: 12px 0 17px;
@@ -73,7 +77,26 @@ body {
 
 .list_item:hover {
   background-color: #625e77;
-  border: 3px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+input[type="checkbox"] {
+}
+
+.checkbox-item:checked + span {
+  color: black;
+}
+
+.pseudo_label::before {
+  content: "\2714";
+  width: 19px;
+  height: 19px;
+  display: block;
+  background-color: white;
+  text-align: center;
+  font-size: 12px;
+  transition: all ease-in-out 0.3s;
 }
 
 /*button*/
